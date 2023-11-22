@@ -10,4 +10,9 @@ $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
   })
 
+  // Initialization for ES Users
+import { Input, initMDB } from "mdb-ui-kit";
+
+initMDB({ Input });
+
  
