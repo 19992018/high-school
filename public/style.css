@@ -2,7 +2,7 @@
  background-color: blue !important;
 }
 
-#about-paragraphs p{
+.text-aligner {
     text-align: justify
 }
 
