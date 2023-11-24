@@ -1,9 +1,29 @@
 .bg-green {
- background-color: #16FF00 !important;
+    background-color: #16FF00 !important;
 }
 
 .text-aligner {
     text-align: justify
+}
+
+.center-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-cimage {
+    border-radius: 25px;
+}
+
+.image-width {
+    width: 18rem;
+}
+
+@media (min-width: 576px) {
+    .image-width {
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
