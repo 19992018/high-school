@@ -86,7 +86,7 @@
             <h1>Welcome to the High School Website</h1>
           </div>
           <div class="d-grid gap-2 p-2">
-            <button class="btn btn-success py-3" type="button" >
+            <button class="btn btn-success py-3" type="button" onclick="location.href='html/about.html'" >
               I am a Visitor
             </button>
             <button class="btn btn-success py-3 to-modal" type="button" data-bs-toggle="modal" data-bs-target="#exampleModalLong">
@@ -117,23 +117,23 @@
             </button>
           </div>
           <div class="modal-body">
-          </div class="col-xs-12 col-md-6 p3">
+          <!-- </div class="col-xs-12 col-md-6 p3"> -->
      
         
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="px-5">
               <div class="card shadow-2-strong" style="border-radius: 1rem;">
+
                 <div class="card-body p-5 text-center">
-      
                   <!-- <h3 class="mb-3">Sign in</h3> -->
-      
+                  <form action="/login" method="POST"></form>
                   <div class="form-outline mb-2">
-                    <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                    <input type="email" id="typeEmailX-2" class="form-control form-control-lg" name="email" required />
                     <label class="form-label" for="typeEmailX-2">Email</label>
                   </div>
       
                   <div class="form-outline mb-2">
-                    <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                    <input type="password" id="typePasswordX-2" class="form-control form-control-lg" name="password" required />
                     <label class="form-label" for="typePasswordX-2">Password</label>
                   </div>
       
@@ -151,6 +151,7 @@
                     type="submit"><i class="fab fa-google me-2"></i> Sign in with google</button>
                   <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
                     type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+                    </form>
                 </div>
               </div>
             </div>
